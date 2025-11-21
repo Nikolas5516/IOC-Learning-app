@@ -1,34 +1,61 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Maven / Java
+/target/
+/out/
+/.idea/
 *.iml
+*.iws
 *.ipr
+.classpath
+.project
+.settings/
 
-### NetBeans ###
+# Maven wrapper
+/.mvn/
+/mvnw
+/mvnw.cmd
+.mvn/wrapper/maven-wrapper.jar
+
+# Build / temp
+/*.log
+/*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IntelliJ, VSCode
+.vscode/
+
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
-n/frontend/node_modules/n/frontend/build/
+# Gradle / Eclipse (if any)
+.gradle/
+build/
+
+# Tests / coverage
+/coverage/
+/*.lcov
+
+# React frontend (do not commit node_modules or build output)
+# (relative to repository root)
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.cache/
+
+# Optional: ignore any other large generated folders under frontend
+frontend/.parcel-cache/
+frontend/.next/
+
+# If you had a .gitmodules file and removed submodule config, keep it ignored until committed
+.gitmodules
